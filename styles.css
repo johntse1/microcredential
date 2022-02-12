@@ -1,0 +1,239 @@
+body{
+  background-color: antiquewhite;
+}
+
+.change{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.head{
+    text-align: center;
+    font-size: 64px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .featured{
+    text-align: center;
+  }
+
+  /*Slideshow*/
+  .slideshowword{
+    border: solid black 2px;
+    width: 500px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 10s;
+    transition-delay: 10s;
+    overflow: hidden;
+  }
+  .slide-wrapper3{
+    width: 400%;
+    height: 100%;
+    animation: slideshow1 20s infinite;
+  }
+  .slide-wrapper3 div{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .slide1{
+    height: 100%;
+    width: 25%;
+    float:left;
+  }
+  @keyframes slideshow1 {
+    0%{margin-left: 0%;}
+    33%{margin-left: -100%;}
+    66%{margin-left: -200%;}
+    100%{margin-left: -300%;}
+  }
+
+  /*Booster Packs*/
+  .boosterhead{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .boosterimg{
+    height: 20%;
+    width:10%;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Poketin Pictures*/
+  .poketinpic{
+    height: 20%;
+    width: 20%;
+    padding: 10px;
+  }
+
+.poketin{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.imgCont{
+  width:40px;
+  height:40px;
+  float:left;
+  margin-top: 6%;;
+}
+.imgCont img{
+  width: 300%;
+  height:500%;
+}
+.info{
+  width:55%;
+  height:90%;
+  float:left;
+  margin-top: 6%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.info p:nth-child(1){
+  font-size: 1.5em;
+  margin-left: 100px;
+}
+.info p:nth-child(2){
+  font-size: .7em;
+  margin-top: -2em;
+  margin-left: 100px;
+}
+.info p:nth-child(3){
+  margin-top: 5em;
+  margin-bottom: 2em;
+  margin-left: 100px;
+}
+
+.infot{
+  width:55%;
+  height:90%;
+  float:left;
+  margin-top: 6%;;
+  margin-left: 200px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.info p:nth-child(1){
+  font-size: 1.5em;
+  margin-left: 100px;
+}
+.info p:nth-child(2){
+  font-size: .7em;
+  margin-top: -2em;
+  margin-left: 100px;
+}
+.info p:nth-child(3){
+  margin-top: 5em;
+  margin-bottom: 2em;
+  margin-left: 100px;
+}
+  
+.title{
+    color:lightyellow;
+    padding:10px;
+    text-align: center;
+}
+.add{
+  background-color: rgb(50,50,50);
+  color:lightgray;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: auto;
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 2em;
+}
+
+.open{
+    padding: 10px 20px;
+    text-decoration: none;
+    color:lightyellow;
+}
+.modalBack{
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    opacity: 0;
+    pointer-events: none;
+}
+.modalBack:target{
+    opacity: 1;
+    pointer-events: auto;
+    transition: ease-in .5s;
+}
+.modalFront{
+    background-color: white;
+    width:600px;
+    height:400px;
+    position: relative;
+    margin:auto;
+    margin-top: 3%;
+
+}
+.close{
+    background-color: lightgray;
+    padding: 10px;
+    position: absolute;
+    text-decoration: none;
+    top:0px;
+    right:0px;
+}
+.close:hover{
+    background-color: rgb(50,50,50);
+    color:lightgray;
+}
+
+  .contactinfo{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  footer{
+    text-align: center;
+    font-size: 10px;
+  }
+
+.add:hover{
+    background-color: lightgray;
+    color:rgb(50,50,50);
+}
+
+.form1{
+  text-align: center;
+}
+
+
+.display3{
+  text-align: center;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -30,12 +30,14 @@ myForm.addEventListener('submit',function(e){
 
 
 //Takes in a number and subtracts it by the as the index of the array within price and name to set the local storage
-let price = document.querySelectorAll('now');
-let pname = document.querySelectorAll('name');
-function addtocart(temp){
-    tempprice = price[temp-1].innerHTML;
-    temppname = pname[temp-1].innerHTML;
 
+function addtocart(temp){
+
+    let price = document.querySelectorAll("now");
+    let pname = document.querySelectorAll("namep");
+
+    let tempprice = price[temp-1].innerHTML;
+    let temppname = pname[temp-1].innerHTML;
     localStorage.setItem("name",temppname);
     localStorage.setItem("price",tempprice);
 }

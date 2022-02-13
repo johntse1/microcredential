@@ -1,4 +1,4 @@
-
+//Theme changer
 let change = document.querySelector('.change');
 let theme = document.querySelector('.back');
 themeCounter = 1
@@ -17,7 +17,6 @@ change.onclick = function(){
 
 let myForm = document.querySelector('.form1');
 let pDisplay = document.querySelector('.display3');
-
 myForm.addEventListener('submit',function(e){
     e.preventDefault();
     let nname = document.querySelector('.inputName').value;
@@ -25,6 +24,18 @@ myForm.addEventListener('submit',function(e){
         alert("No name detected!");
     }
     if(nname!=""){
-        pDisplay.innerHTML=`Welcome to the program ${nname}`;
+        pDisplay.innerHTML=`Welcome to Pokemon Extraordinaire ${nname}!`;
     }
 });
+
+
+//Takes in a number and subtracts it by the as the index of the array within price and name to set the local storage
+let price = document.querySelectorAll('now');
+let pname = document.querySelectorAll('name');
+function addtocart(temp){
+    tempprice = price[temp-1].innerHTML;
+    temppname = pname[temp-1].innerHTML;
+
+    localStorage.setItem("name",temppname);
+    localStorage.setItem("price",tempprice);
+}
